@@ -51,6 +51,22 @@
 }
 
 
+.logo_poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo_poster_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
 .clinica {
     display: flex;
     justify-content: center;
