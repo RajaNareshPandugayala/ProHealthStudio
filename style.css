@@ -38,6 +38,23 @@
     font-size: 22px;
 }
 
+.header_language {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header_language_button {
+    padding: 2px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    /* width: 60px; */
+    cursor: pointer;
+    background-color: #5F9BCE;
+    color: #ffffff;
+}
+
+
 .header_rightside {
     display: flex;
     align-items: center;
@@ -114,6 +131,9 @@
 }
 
 
+/*********************************comments_Css-start*************************************/
+
+
 .testimonios {
     display: flex;
     flex-direction: column;
@@ -122,6 +142,8 @@
     text-align: center;
     padding: 100px 0px 20px 0px;
     gap: 20px;
+    background-color: #ededed;
+    /* border: 1px solid red; */
 }
 
 .testimonios_box {
@@ -146,17 +168,20 @@
 
 .testimonios_comments_parent {
     display: flex;
-    justify-content: space-between;
-    text-align: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
+    gap: 50px;
     /* border: 1px solid red; */
 }
 
 .testimonios_comments {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 300px;
+    width: 80%;
     line-height: 22px;
 }
 
@@ -188,18 +213,55 @@
     color: #5F9BCE;
 }
 
+.testimonios_comments_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 300px;
+}
+
+
+.testimonios_comments_left_arrow_button {
+    position: fixed;
+    left: 8%;
+}
+
+
+.testimonios_comments_right_arrow_button {
+    position: fixed;
+    right: 8%;
+}
+
+
+.arrow_button {
+    cursor: pointer;
+    font-size: 38px;
+    color: #5F9BCE;
+}
+
+.arrow_button:active {
+    color: #FBBC04;
+}
+
 .testimonios_footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     font-weight: bold;
     color: #5F9BCE;
     text-decoration: underline;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .testimonios_footer span:hover {
     color: lightslategray;
 }
+
+
+/*********************************comments_Css-end*************************************/
 
 
 .galeria {
@@ -227,16 +289,32 @@
 
 .galeria_images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 28px;
     flex-wrap: wrap;
 }
 
 .galeria_images img {
     width: 380px;
+    width: 80%;
+    height: 550px;
 }
 
+.galeria_images_buttons {
+    display: flex;
+    gap: 8px;
+}
 
+.photos_button {
+    padding: 5px;
+    background-color: lightgray;
+    border: 1px solid #5F9BCE;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: -60px;
+}
 
 
 .comunicate {
