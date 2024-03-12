@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check the current language and toggle it
         const currentLanguage = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
         const isEnglish = currentLanguage.toLowerCase().startsWith('en');
-        languageButton.textContent = isEnglish ? "Spanish" : "English";
+        // languageButton.textContent = isEnglish ? "Spanish" : "English";
         changeLanguage(isEnglish ? 'es' : 'en'); // Set the language accordingly
     });
 
-    // Set initial text content of the button based on the user's language
-    const currentLanguage = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
-    const isEnglish = currentLanguage.toLowerCase().startsWith('en');
-    languageButton.textContent = isEnglish ? "Spanish" : "English";
+    // // Set initial text content of the button based on the user's language
+    // const currentLanguage = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
+    // const isEnglish = currentLanguage.toLowerCase().startsWith('en');
+    // languageButton.textContent = isEnglish ? "Spanish" : "English";
 });
 
 /************************ code for language end************************** */
