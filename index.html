@@ -24,15 +24,117 @@
     <header class="header">
         <div class="header_box box">
             <div class="header_leftside">
-                <i class="fa-solid fa-bars"></i>
+                <div class="header_main-menu">
+                    <div class="menuclosebtn">
+                        <i class="fa-solid fa-bars menu_btn" id="menubtn"></i>
+                        <span class="close_btn" style="display: none;" id="closebtn">X</span>
+                    </div>
+                    <ul id="header_menu-main-menu" class="header_main-menu_ul header_main-menu_ul01"
+                        style="display: none;">
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Testimonios
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Galeria
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Contacto
+                            </li>
+                        </a>
+                    </ul>
+                    <ul id="header_menu-main-menu" class="header_main-menu_ul header_main-menu_ul02"
+                        style="display: none;">
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Testimonios
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Galeria
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Contacto
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Cómo Llegar
+                            </li>
+                        </a>
+                    </ul>
+                    <ul id="header_menu-main-menu" class="header_main-menu_ul header_main-menu_ul03"
+                        style="display: none;">
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Testimonios
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Galeria
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Contacto
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Llamar Ahora
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Cómo Llegar
+                            </li>
+                        </a>
+                    </ul>
+                    <ul id="header_menu-main-menu" class="header_main-menu_ul header_main-menu_ul04"
+                        style="display: none;">
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Testimonios
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Galeria
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Contacto
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Reserva Una Cita
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Llamar Ahora
+                            </li>
+                        </a>
+                        <a href="" class="header_main-menu_ul-li-a">
+                            <li class="header_main-menu_ul-li">
+                                Cómo Llegar
+                            </li>
+                        </a>
+                    </ul>
+                </div>
                 <p>Clinica Familiar ProHealth Studio - Frisco</p>
             </div>
-            <div class="header_language">
-                <button class="header_language_button" id="languageButton"><span class="header_language_text">Translate
-                        to:</span>
-                    <img src="language_translation.png" alt="lang_image"></button>
-            </div>
-            <div class="header_rightside">
+            <div class="header_rightside header_rightside01">
                 <span>
                     <i class="fa-solid fa-calendar-day"></i>
                     <p>Reserva Una Cita</p>
@@ -46,8 +148,32 @@
                     <p>Cómo Llegar</p>
                 </span>
             </div>
+            <div class="header_rightside header_rightside02" style="display: none;">
+                <span>
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <p>Reserva Una Cita</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Llamar Ahora</p>
+                </span>
+            </div>
+            <div class="header_rightside header_rightside03" style="display: none;">
+                <span>
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <p>Reserva Una Cita</p>
+                </span>
+            </div>
+            <div class="header_rightside header_rightside04" style="display: none; gap:0px; padding: 0px;">
+            </div>
+            <div class="header_language">
+                <button class="header_language_button" id="languageButton"><span class="header_language_text">Translate
+                        to:</span>
+                    <img src="language_translation.png" alt="lang_image"></button>
+            </div>
         </div>
     </header>
+
     <section class="clinica">
         <div class="clinica_box box">
             <span class="clinica_header">Clinica Familiar</span>
@@ -62,7 +188,7 @@
             <img src="poster08-02-2024(2).png" alt="logo_poster" class="logo_poster_img box">
         </div>
     </section>
-    <iframe src="comments.html" frameborder="0" width="100%" height="500px"></iframe>
+    <iframe src="comments.html" frameborder="0" width="100%" height="400px"></iframe>
     <section class="galeria">
         <div class="galeria_box box">
             <div class="galeria_header">
@@ -114,14 +240,14 @@
             <div class="contacto_contacto contacto_section">
                 <p class="contacto_header">Contacto</p>
                 <input type="submit" value="LLAMAR AHORA" class="contacto_button">
-                <p>(469) 473-4120</p>
+                <p>(469) 473-4120 <span>Frisco</span></p>
+                <p>(469)-543-0630 <span>Plano</span></p>
             </div>
             <div class="contacto_dirección contacto_section">
                 <p class="contacto_header">Dirección</p>
                 <input type="submit" value="CÓMO LLEGAR" class="contacto_button">
-                <p>4645 Wyndham Lane Ste 230
-                    Frisco, TX 75033
-                    EE. UU.</p>
+                <p>4645 Wyndham Lane Ste 230 Frisco, TX 75033.</p>
+                <p>6853 Coit Rd, Ste 300, Plano, TX 75024.</p>
             </div>
             <div class="contacto_horario  contacto_section">
                 <p class="contacto_header">Horario de atención</p>
@@ -164,7 +290,7 @@
             <div class="footer_text">
                 <span>Denunciar abuso</span>
                 <span>Foto del encabezado de Clinica Hispana ProHealth Studio - Frisco</span>
-                <span>Con tecnología de Google</span>
+                <span>Con tecnología de ShushankTech</span>
             </div>
         </div>
     </footer>

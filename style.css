@@ -9,6 +9,100 @@
     width: 1200px;
 }
 
+
+/***************************menu-start*********************************/
+
+@keyframes fadeSkewM {
+    from {
+        opacity: 0;
+        transform: rotateZ(180deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fadeSkewX {
+    from {
+        opacity: 0;
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateZ(180deg);
+    }
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.menuclosebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#menubtn,
+#closebtn {
+    width: 20px;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+#menubtn {
+    animation: fadeSkewM 0.3s linear alternate;
+}
+
+#closebtn {
+    animation: fadeSkewX 0.3s linear alternate;
+}
+
+.header_main-menu_ul {
+    width: 650px;
+    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 5px 0px gray;
+    animation: fadeInDown 0.3s linear alternate;
+}
+
+
+.header_main-menu_ul a {
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    color: #5F9BCE;
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+    border-bottom: 2px solid lightgray;
+    padding: 10px 20px;
+}
+
+.header_main-menu_ul a:hover {
+    display: block;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+/***************************menu-end*********************************/
+
+
 .header {
     display: flex;
     justify-content: center;
@@ -37,7 +131,6 @@
     align-items: center;
     gap: 30px;
     font-size: 22px;
-
 }
 
 .header_language {
@@ -72,16 +165,18 @@
 
 .header_rightside {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 45px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid red; */
 }
 
 .header_rightside span {
     display: flex;
     align-items: center;
     gap: 10px;
+    /* border: 1px solid red; */
 }
 
 
@@ -115,7 +210,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 0px 50px 0px;
+    padding: 50px 0px 10px 0px;
     gap: 20px;
 }
 
@@ -157,7 +252,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 0px 20px 0px;
+    padding: 20px 0px;
     gap: 20px;
     background-color: #ededed;
     /* border: 1px solid red; */
@@ -204,8 +299,8 @@
 
 .testimonios_comments_rating {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid red; */
 }
 
@@ -235,7 +330,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 300px;
+    top: 200px;
 }
 
 
@@ -281,13 +376,14 @@
 /*********************************comments_Css-end*************************************/
 
 
+
 .galeria {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px 0px;
+    padding: 10px 0px;
     gap: 20px;
 }
 
@@ -340,7 +436,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px 0px;
+    padding: 20px 0px;
     gap: 20px;
 }
 
@@ -362,7 +458,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    padding: 20px 0px;
     gap: 20px;
 }
 
@@ -413,13 +509,18 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* border: 1px solid red; */
 }
 
 .footer_text {
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: space-between;
     color: gray;
     font-size: 12px;
+    gap: 10px;
+    /* border: 1px solid red; */
 }
 
 
@@ -435,6 +536,10 @@
 
     .header_rightside {
         gap: 20px;
+    }
+
+    .header_main-menu_ul {
+        width: 80%;
     }
 }
 
