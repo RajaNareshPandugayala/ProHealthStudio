@@ -131,6 +131,7 @@
     align-items: center;
     gap: 30px;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .header_language {
@@ -580,5 +581,57 @@
         width: 90%;
         height: 300px;
     }
+
+}
+
+
+@media (max-width: 500px) {
+    .header_box {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo_poster_div {
+        padding: 0px;
+    }
+
+    .testimonios_comments {
+        width: 100%;
+    }
+
+
+    .testimonios_comments_left_arrow_button {
+        left: 4.5%;
+    }
+
+
+    .testimonios_comments_right_arrow_button {
+        right: 4.5%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .clinica_header {
+        font-size: 48px;
+    }
+
+
+    .galeria_images,
+    .photos {
+        /* border: 1px solid red; */
+        width: 100%;
+        padding: 0px;
+    }
+
+    .comunicate_map {
+        padding: 0px;
+    }
+
 
 }
