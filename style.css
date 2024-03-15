@@ -9,6 +9,14 @@
     width: 1200px;
 }
 
+a {
+    text-decoration: none;
+    color: #5F9BCE;
+}
+
+.contacto_atag {
+    color: black;
+}
 
 /***************************menu-start*********************************/
 
@@ -62,6 +70,7 @@
 #closebtn {
     width: 20px;
     font-weight: bold;
+    cursor: pointer;
     /* border: 1px solid red; */
 }
 

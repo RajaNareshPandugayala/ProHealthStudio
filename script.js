@@ -183,6 +183,20 @@ document.addEventListener("DOMContentLoaded", function () {
         menuList.style.display = "none";
     });
 
+
+    // Add event listener to document body for clicks
+    document.body.addEventListener("click", function (event) {
+        const target = event.target;
+        // Check if the click target is not inside the menu or menu button
+        if (!target.closest('.header_main-menu') && !target.closest('#menubtn')) {
+            // Close the menu
+            closeButton.click();
+        }
+    });
+
+
+
+
     menuButton.addEventListener("click", function () {
         const screenWidth = window.innerWidth;
         let targetMenu;
@@ -244,6 +258,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+
+    // Function to close the menu when Esc key is pressed
+    function closeMenuOnEsc(event) {
+        if (event.key === "Escape") {
+            closeButton.click(); // Simulate a click on the close button
+        }
+    }
+
+    // Add event listener for keydown event on the document
+    document.addEventListener("keydown", closeMenuOnEsc);
+
+
+
+    document.addEventListener("unload", function () {
+        document.removeEventListener("keydown", closeMenuOnEsc);
+    });
+
+
+
     // Call the function initially
     handleVisibility();
 
@@ -251,6 +284,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', function () {
         // Call the function whenever the window is resized
         handleVisibility();
+    });
+
+
+    // Add event listener to each menu item to close menu on click
+    document.querySelectorAll('.header_main-menu_ul-li-a').forEach(function (menuItem) {
+        menuItem.addEventListener('click', function () {
+            closeButton.click();
+        });
     });
 
 });
