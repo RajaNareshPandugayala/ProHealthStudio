@@ -272,7 +272,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 .testimonios_header {
@@ -401,7 +401,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
 }
 
 .galeria_header {
@@ -454,7 +454,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .comunicate_header {
