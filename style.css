@@ -652,5 +652,13 @@ a {
         padding: 0px;
     }
 
+    .header_leftside {
+        gap: 4px;
+    }
+
+    .header_box {
+        padding: 10px 0px;
+    }
+
 
 }
