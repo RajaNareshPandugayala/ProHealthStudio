@@ -1,32 +1,75 @@
 /************************ code for language start************************** */
 
+// open with English languane
 document.addEventListener('DOMContentLoaded', function () {
     const languageButton = document.getElementById('languageButton');
+    const englishElements = document.querySelectorAll('.english_language');
+    const spanishElements = document.querySelectorAll('.spanish_language');
 
-    // Function to change the language and store it in localStorage
-    function changeLanguage(languageCode) {
-        try {
-            localStorage.setItem('preferredLanguage', languageCode); // Store language preference
-            location.reload(); // Refresh the page to apply the changes
-        } catch (error) {
-            console.error('Error changing language:', error);
-        }
-    }
+    // Initially show English language and hide Spanish language
+    showEnglish();
 
-    // Event listener for the language button
+    // Toggle between English and Spanish languages when languageButton is clicked
     languageButton.addEventListener('click', function () {
-        // Check the current language and toggle it
-        const currentLanguage = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
-        const isEnglish = currentLanguage.toLowerCase().startsWith('en');
-        // languageButton.textContent = isEnglish ? "Spanish" : "English";
-        changeLanguage(isEnglish ? 'es' : 'en'); // Set the language accordingly
+        if (englishElements[0].style.display === 'none') {
+            showEnglish();
+        } else {
+            showSpanish();
+        }
     });
 
-    // // Set initial text content of the button based on the user's language
-    // const currentLanguage = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
-    // const isEnglish = currentLanguage.toLowerCase().startsWith('en');
-    // languageButton.textContent = isEnglish ? "Spanish" : "English";
+    function showEnglish() {
+        englishElements.forEach(element => {
+            element.style.display = 'inline';
+        });
+        spanishElements.forEach(element => {
+            element.style.display = 'none';
+        });
+    }
+
+    function showSpanish() {
+        englishElements.forEach(element => {
+            element.style.display = 'none';
+        });
+        spanishElements.forEach(element => {
+            element.style.display = 'inline';
+        });
+    }
 });
+
+
+
+
+// // open with Spanish languane
+// document.addEventListener("DOMContentLoaded", function () {
+//     const languageButton = document.getElementById("languageButton");
+//     const spanishElements = document.querySelectorAll(".spanish_language");
+//     const englishElements = document.querySelectorAll(".english_language");
+
+//     languageButton.addEventListener("click", function () {
+//         if (spanishElements[0].style.display === "none") {
+//             // Spanish is hidden, show it and hide English
+//             spanishElements.forEach(element => {
+//                 element.style.display = "inline";
+//             });
+//             englishElements.forEach(element => {
+//                 element.style.display = "none";
+//             });
+//             languageButton.innerText = "Translate to: English";
+//         } else {
+//             // English is hidden, show it and hide Spanish
+//             spanishElements.forEach(element => {
+//                 element.style.display = "none";
+//             });
+//             englishElements.forEach(element => {
+//                 element.style.display = "inline";
+//             });
+//             languageButton.innerText = "Traducir a: Española";
+//         }
+//     });
+// });
+
+
 
 /************************ code for language end************************** */
 

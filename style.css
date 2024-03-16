@@ -5,6 +5,10 @@
     font-family: "Comfortaa", sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 .box {
     width: 1200px;
 }
@@ -16,6 +20,10 @@ a {
 
 .contacto_atag {
     color: black;
+}
+
+.english_language {
+    display: none;
 }
 
 /***************************menu-start*********************************/
@@ -157,15 +165,17 @@ a {
     align-items: center;
     justify-self: center;
     text-align: center;
+    flex-direction: column;
     padding: 2px;
     border: 1px solid transparent;
     font-weight: bold;
-    /* width: 60px; */
+    width: 90px;
     cursor: pointer;
     background-color: #5F9BCE;
     color: #ffffff;
     gap: 3px;
     /* flex-wrap: wrap; */
+    /* border: 2px solid red; */
 }
 
 .header_language img {
@@ -182,7 +192,7 @@ a {
     /* border: 1px solid red; */
 }
 
-.header_rightside span {
+.header_rightside_span {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -340,7 +350,7 @@ a {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 200px;
+    top: 170px;
 }
 
 
