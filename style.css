@@ -26,6 +26,8 @@ a {
     display: none;
 }
 
+
+
 /***************************menu-start*********************************/
 
 @keyframes fadeSkewM {
@@ -124,8 +126,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding: 20px 0px;
+    padding: px 0px;
     box-shadow: 0px 0px 5px 0px gray;
     background-color: #ffffff;
     /* border: 2px solid blue; */
@@ -134,6 +137,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* gap: 10px; */
 }
 
 .header_box {
@@ -141,6 +145,67 @@ a {
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
+}
+
+.header_box_top {
+    background-color: #5F9BCE;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo {
+    width: 200px;
+}
+
+.header_address_phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header_address_phone a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* border: 1px solid red; */
+}
+
+.social-links-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 28px;
+    list-style-type: none;
+}
+
+@keyframes scrollDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-down-animation {
+    animation: scrollDown 1s ease-in-out;
+}
+
+.header_address,
+.header_number {
+    color: #ffffff;
+}
+
+.header_address img,
+.header_number img {
+    height: 16px;
 }
 
 .header_leftside {
@@ -166,10 +231,10 @@ a {
     justify-self: center;
     text-align: center;
     flex-direction: column;
-    padding: 5px 2px;
+    padding: 20px 5px;
     border: 1px solid transparent;
     font-weight: bold;
-    width: 85px;
+    width: 135px;
     cursor: pointer;
     background-color: #5F9BCE;
     color: #ffffff;
@@ -179,6 +244,7 @@ a {
     /* flex-wrap: wrap; */
     /* border: 2px solid red; */
 }
+
 
 .header_language img {
     width: 20px;
@@ -215,6 +281,182 @@ a {
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
+}
+
+.appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 10000;
+}
+
+.appointment_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appointment_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #5F9BCE;
+    padding: 50px;
+    border-radius: 0.5cm;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 80px 100px gray;
+}
+
+.appointment_form input,
+.appointment_form textarea,
+.appointment_form select {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 0.25cm;
+}
+
+.appointment_form input:active,
+.appointment_form textarea:active,
+.appointment_form button:active {
+    background-color: lightblue;
+}
+
+.appointment_form input:focus,
+.appointment_form textarea:focus,
+.appointment_form button {
+    border: 1px solid #5F9BCE;
+    outline: none;
+}
+
+.appointment_form button {
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: lightgray;
+    border-radius: 0.25cm;
+    cursor: pointer;
+}
+
+.close-btn_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 13px;
+    background-color: #5F9BCE;
+    border-radius: 50%;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: -20px;
+}
+
+
+.close-btn_div:active {
+    background-color: darkorange;
+}
+
+.more_services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./moreservices_bg02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.more_services_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px black;
+    gap: 10px;
+}
+
+.more_services_list button {
+    padding: 20px 30px;
+    border: 1px solid transparent;
+    background-color: #5F9BCE;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0.5cm;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px gray;
+}
+
+.more_services_list button:active {
+    background-color: darkorange;
+    color: #ffffff;
+}
+
+
+
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid red; */
+}
+
+.services_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sevices_list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.sevices_list h3 {
+    padding-bottom: 10px;
+}
+
+.sevices_list_div {
+    /* border: 1px solid red; */
+    padding: 40px 20px 30px 40px;
+    width: 380px;
+    height: 340px;
+    border-radius: 0.5cm;
+    background-color: #00008b80;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px 0px gray;
+    /* text-shadow: 0px 0px 10px black; */
+}
+
+.sevices_list_div_gm {
+    background-image: url(General-medicine.jpg);
+    background-image: linear-gradient(155deg, #00000080, #5F9BCE), url(General-medicine.jpg);
+    /* background: linear-gradient(215deg, #20f5a9, #1a59c8); */
+    background-position: center;
+    background-size: cover;
+}
+
+.sevices_list_div_lt {
+    background-image: url(laboratory-test.jpg);
+    background-image: linear-gradient(155deg, #00000080, #5F9BCE), url(laboratory-test.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -552,6 +794,14 @@ a {
         padding: 0px 30px;
     }
 
+    .more_services_list {
+        padding: 30px;
+    }
+
+    .appointment_form {
+        padding: 30px;
+    }
+
     .clinica_box {
         padding: 50px 30px;
     }
@@ -564,6 +814,19 @@ a {
         width: 80%;
     }
 }
+
+
+
+@media (max-width: 950px) {
+    .header_address_phone {
+        display: none;
+    }
+
+    .header_address_phone.active {
+        display: flex;
+    }
+}
+
 
 
 @media (max-width: 800px) {
